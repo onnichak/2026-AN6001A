@@ -1,0 +1,105 @@
+
+/* Global Styling */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center Everything */
+body {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    background: linear-gradient(
+        135deg,
+        #667eea 0%,
+        #a76dd4 50%,
+        #f093b0 100%
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Card */
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 50px 35px;
+
+    background: #ffffff;
+    border-radius: 24px;
+
+    box-shadow: 0 15px 45px rgba(50, 30, 100, 0.2);
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #7554c9;
+    margin: 0 0 15px;
+}
+
+/* Description */
+p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+
+    background: linear-gradient(135deg, #667eea, #a76dd4);
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 35px 25px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
